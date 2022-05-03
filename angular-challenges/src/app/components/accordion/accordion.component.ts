@@ -13,4 +13,10 @@ export class AccordionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public toggle(item: AccordionItem)
+  {
+    item.isExpanded = !item.isExpanded
+    console.log(item.isExpanded)
+  }
+
 }
