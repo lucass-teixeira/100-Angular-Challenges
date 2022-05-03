@@ -1,0 +1,17 @@
+<app-toolbar [title]="'100 Angular Challenge'">
+    <ul>
+        <li>Components</li>
+        <li>Directives</li>
+        <li>Services</li>
+        <li>Pipes</li>
+        <li>Other</li>
+    </ul>
+</app-toolbar >
+<app-card [title]="'According'" [subtitle]="'Components'">
+    <app-accordion [items]="accordionItems" body></app-accordion>
+</app-card>
+<app-card [title]="'Card'" [subtitle]="'Components'" >
+
+    <p footer>Footer Content</p>
+    <p body>Body Content</p>
+</app-card>

@@ -1,0 +1,11 @@
+@import '../../../styles/styles.scss';
+
+
+.according-container{
+    @include box-shadow();
+
+
+    .item{
+        border-bottom: 1px solid rgb(221, 221,221);
+    }
+}
