@@ -7,13 +7,17 @@
         <li>Other</li>
     </ul>
 </app-toolbar >
+
+<app-card [title]="'Rating'" [subtitle]="'Components'" >
+    <app-star-ratings></app-star-ratings>
+</app-card>
 <app-card [title]="'ProgressBar'" [subtitle]="'Components'">
     <app-progress-bar body [value]="progressValue"></app-progress-bar>
     <button footer (click)="progressValue = 75;">Update</button>
 </app-card>
 
 <app-card [title]="'According'" [subtitle]="'Components'">
-    <app-accordion [items]="accordionItems" body></app-accordion>
+    <app-accordion [arrow]="upArrow" [items]="accordionItems" body></app-accordion>
 </app-card>
 <app-card [title]="'Card'" [subtitle]="'Components'" >
 

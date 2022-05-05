@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import {AccordionItem} from '../app/models/according-item'
+import { faStar, faStarHalf, faCircleDown } from '@fortawesome/free-regular-svg-icons'; 
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,10 @@ import {AccordionItem} from '../app/models/according-item'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-challenges';
+  star = faStar
+  halfStar = faStarHalf
+  upArrow = faCircleDown
+
 
   public accordionItems: AccordionItem[] = [
     {
