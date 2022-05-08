@@ -8,8 +8,8 @@
     </ul>
 </app-toolbar >
 
-<app-card [title]="'Rating'" [subtitle]="'Components'" >
-    <app-star-ratings></app-star-ratings>
+<app-card [title]="'Rating'" [subtitle]="'Components'"  >
+    <app-star-ratings body [rating]="3.5" [starIcon]="star" [halfStar]="halfStar"></app-star-ratings>
 </app-card>
 <app-card [title]="'ProgressBar'" [subtitle]="'Components'">
     <app-progress-bar body [value]="progressValue"></app-progress-bar>

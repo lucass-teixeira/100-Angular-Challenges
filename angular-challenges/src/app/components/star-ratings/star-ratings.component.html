@@ -1,1 +1,3 @@
-<p>star-ratings works!</p>
+<fa-icon class="fas fa-star" *ngFor="let star of fullStars"></fa-icon>
+<fa-icon class="fas fa-star-half-alt" *ngIf="hasHalfStar" ></fa-icon>
+<fa-icon class="far fa-star" *ngFor="let star of emptyStars"></fa-icon>
