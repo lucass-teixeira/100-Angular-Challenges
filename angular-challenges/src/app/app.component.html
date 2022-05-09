@@ -1,26 +1,13 @@
 <app-toolbar [title]="'100 Angular Challenge'">
     <ul>
-        <li>Components</li>
-        <li>Directives</li>
-        <li>Services</li>
-        <li>Pipes</li>
+        <li routerLink="" >Components</li>
+        <li routerLink="directives">Directives</li>
+        <li routerLink="services">Services</li>
+        <li routerLink="pipes">Pipes</li>
         <li>Other</li>
     </ul>
-</app-toolbar >
-
-<app-card [title]="'Rating'" [subtitle]="'Components'"  >
-    <app-star-ratings body [rating]="3.5" [starIcon]="star" [halfStar]="halfStar"></app-star-ratings>
-</app-card>
-<app-card [title]="'ProgressBar'" [subtitle]="'Components'">
-    <app-progress-bar body [value]="progressValue"></app-progress-bar>
-    <button footer (click)="progressValue = 75;">Update</button>
-</app-card>
-
-<app-card [title]="'According'" [subtitle]="'Components'">
-    <app-accordion [arrow]="upArrow" [items]="accordionItems" body></app-accordion>
-</app-card>
-<app-card [title]="'Card'" [subtitle]="'Components'" >
-
-    <p footer>Footer Content</p>
-    <p body>Body Content</p>
-</app-card>
+</app-toolbar>
+<main>
+    <router-outlet></router-outlet>
+</main>
+<app-top-of-page></app-top-of-page>
