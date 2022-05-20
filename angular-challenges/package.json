@@ -5,6 +5,9 @@
     "ng": "ng",
     "start": "ng serve --open",
     "build": "ng build",
+    "p": "ng g p pipes/truncate",
+    "m": "ng generate module pipes/pipe --route testes --module app.module",
+    "c": "ng generate c pipes/pipe/cardpipe",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

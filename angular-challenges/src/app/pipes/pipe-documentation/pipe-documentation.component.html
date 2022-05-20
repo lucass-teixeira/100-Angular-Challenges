@@ -1,1 +1,7 @@
-<p>pipe-documentation works!</p>
+<app-cardpipe [title]="'Component'" [subtitle]="'Truncate'">
+    <p body > {{'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque praesentium eveniet iure blanditiis aperiam quaerat ullam qui aspernatur, 
+        officia rerum, enim labore molestiae facilis? Officiis laborum aliquam
+         vitae quo sit.' | truncate : 100 }}
+        
+    </p>
+</app-cardpipe>
